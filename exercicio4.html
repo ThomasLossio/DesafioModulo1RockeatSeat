@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 4</title>
+</head>
+<body>
+    
+    <script>
+        function experiencia(anos) {
+            if (anos >= 0 && anos <= 1) {
+                return "Iniciante";
+            } else if (anos >= 2 && anos <= 3) {
+                return "Intermediário";
+            } else if (anos >= 4 && anos <= 6) {
+                return "Avançado";
+            } else if (anos >= 7) {
+                return "Jedi Master";
+            }
+        }
+
+        var anosEstudo = 7;
+        console.log(experiencia(anosEstudo));
+
+        // Fiz um ajuste, pois ficou 0-1 e 1-3, então atribui sendo sempre o valor seguinte da final, exemplo: 0-1 e depois 2-3 e assim por diante
+        // De 0-1 ano: Iniciante
+        // De 1-3 anos: Intermediário
+        // De 3-6 anos: Avançado
+        // De 7 acima: Jedi Master
+    </script>
+</body>
+</html>
